@@ -1,1 +1,12 @@
 /node_modules/
+
+.DS_Store
+
+/.vscode
+
+/coverage
+.idea
+yarn.lock
+package-lock.json
+*bak
+jsconfig.json
