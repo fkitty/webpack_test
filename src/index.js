@@ -2,6 +2,7 @@ import _ from 'lodash';
 import j from 'jquery'
 
 
+
   // 引入jQuery
   function component() {
     
@@ -14,6 +15,7 @@ import j from 'jquery'
     
     // jQuery
     element.html(_.join(['Hello','webpack'], ' '))
+    console.log(1);
 
     // return element;
     return element.get(0);
