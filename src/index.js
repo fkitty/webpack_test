@@ -1,32 +1,38 @@
 import _ from 'lodash';
 import j from 'jquery'
+import foo from './foo';
+import './style.css';
+
+
 
 
 
   // 引入jQuery
-  function component() {
+  // function component() {
+  //   // let element = document.createElement('div');
     
-    // let element = document.createElement('div');
-    
-    // jQuery
-    let element = j('<div></div>');
+  //   // jQuery
+  //   let element = j('<div></div>');
 
-    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  //   // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     
-    // jQuery
-    element.html(_.join(['Hello','webpack'], ' '))
-    console.log(1);
-
-    // return element;
-    return element.get(0);
-  }
+  //   // jQuery
+  //   element.html(_.join(['Hi','webpack'], ' '))
+  //   // return element;
+  //   return element.get(0);
+  // }
 
 
   // 没有引入jQuery
-  // function componentNojQuery() {
-  //   let element = document.createElement('div');
-  //   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  //   return element;
-  // }
+  function componentNojQuery() {
+    let element = document.createElement('div');
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.classList.add('hello');
+    return element;
+  }
 
-document.body.appendChild(component());
+document.body.appendChild(componentNojQuery());
+console.log(foo, 'foo');
+console.log(foo(), 'fooo执行');
+
+
