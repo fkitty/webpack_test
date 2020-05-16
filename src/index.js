@@ -4,9 +4,6 @@ import foo from './foo';
 import './style.css';
 
 
-
-
-
   // 引入jQuery
   // function component() {
   //   // let element = document.createElement('div');
@@ -32,7 +29,6 @@ import './style.css';
   }
 
 document.body.appendChild(componentNojQuery());
-console.log(foo, 'foo');
-console.log(foo(), 'fooo执行');
+
 
 
